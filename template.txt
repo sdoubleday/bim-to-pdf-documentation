@@ -2,7 +2,9 @@
 - {{model.name}}
 {{for t in model.model.tables}}
 ## {{t.name}}
-{{if t.description}}- {{t.description}}{{end}}
+
+{{if t.description}}{{t.description}}{{end}}
+
 {{for a in t.annotations
 }}
 - {{a.name}}: {{a.value}}
@@ -12,20 +14,24 @@
 {{for i in t.columns
 }}
 #### Name: {{i.name}}
-{{if i.description}}{{i.description}}
-{{end}}{{if i.displayFolder}}- Display Folder: {{i.displayFolder}}
-{{end}}- Table: {{t.name
-}}{{if i.expression}}- Expression: {{i.expression}}
-}}{{end}}
-{{if i.isHidden}}- Hidden: {{i.isHidden}}
-{{end}}
-{{if i.dataType}}- Data Type: {{i.dataType}}
-{{end}}
-{{if i.formatString}}- Format String: {{i.formatString}}
-{{end}}
-{{for a in i.annotations
-}}
+
+{{if i.description}}{{i.description}}{{end}}
+
+{{if i.displayFolder}}- Display Folder: {{i.displayFolder}}{{end}}
+
+- Table: {{t.name}}
+
+{{if i.expression}}- Expression: {{i.expression}}{{end}}
+
+{{if i.isHidden}}- Hidden: {{i.isHidden}}{{end}}
+
+{{if i.dataType}}- Data Type: {{i.dataType}}{{end}}
+
+{{if i.formatString}}- Format String: {{i.formatString}}{{end}}
+
+{{for a in i.annotations}}
 - {{a.name}}: {{a.value}}
+
 {{end}}
 {{end}}
 
@@ -33,20 +39,24 @@
 {{for i in t.hierarchies
 }}
 #### Name: {{i.name}}
-{{if i.description}}{{i.description}}
-{{end}}{{if i.displayFolder}}- Display Folder: {{i.displayFolder}}
-{{end}}- Table: {{t.name
-}}{{if i.expression}}- Expression: {{i.expression}}
-}}{{end}}
-{{if i.isHidden}}- Hidden: {{i.isHidden}}
-{{end}}
-{{if i.dataType}}- Data Type: {{i.dataType}}
-{{end}}
-{{if i.formatString}}- Format String: {{i.formatString}}
-{{end}}
-{{for a in i.annotations
-}}
+
+{{if i.description}}{{i.description}}{{end}}
+
+{{if i.displayFolder}}- Display Folder: {{i.displayFolder}}{{end}}
+
+- Table: {{t.name}}
+
+{{if i.expression}}- Expression: {{i.expression}}{{end}}
+
+{{if i.isHidden}}- Hidden: {{i.isHidden}}{{end}}
+
+{{if i.dataType}}- Data Type: {{i.dataType}}{{end}}
+
+{{if i.formatString}}- Format String: {{i.formatString}}{{end}}
+
+{{for a in i.annotations}}
 - {{a.name}}: {{a.value}}
+
 {{end}}
 {{end}}
 
@@ -54,20 +64,24 @@
 {{for i in t.measures
 }}
 #### Name: {{i.name}}
-{{if i.description}}{{i.description}}
-{{end}}{{if i.displayFolder}}- Display Folder: {{i.displayFolder}}
-{{end}}- Table: {{t.name
-}}{{if i.expression}}- Expression: {{i.expression}}
-}}{{end}}
-{{if i.isHidden}}- Hidden: {{i.isHidden}}
-{{end}}
-{{if i.dataType}}- Data Type: {{i.dataType}}
-{{end}}
-{{if i.formatString}}- Format String: {{i.formatString}}
-{{end}}
-{{for a in i.annotations
-}}
+
+{{if i.description}}{{i.description}}{{end}}
+
+{{if i.displayFolder}}- Display Folder: {{i.displayFolder}}{{end}}
+
+- Table: {{t.name}}
+
+{{if i.expression}}- Expression: {{i.expression}}{{end}}
+
+{{if i.isHidden}}- Hidden: {{i.isHidden}}{{end}}
+
+{{if i.dataType}}- Data Type: {{i.dataType}}{{end}}
+
+{{if i.formatString}}- Format String: {{i.formatString}}{{end}}
+
+{{for a in i.annotations}}
 - {{a.name}}: {{a.value}}
+
 {{end}}
 {{end}}
 

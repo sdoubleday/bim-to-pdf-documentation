@@ -16,7 +16,7 @@ PARAM(
 
 BEGIN   {}<# END BEGIN    #>
 PROCESS {
-[FileInfo]$file = Get-ChildItem $InputBimFile;
+[System.IO.FileInfo]$file = Get-ChildItem $InputBimFile;
 
 $Path = Split-Path $InputBimFile;
 $CoreName = Split-Path $InputBimFile -Leaf;
